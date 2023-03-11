@@ -1,0 +1,63 @@
+@media(max-width: 375px){
+    body{
+        background: var(--primary-color-1) url('../images/bg-mobile.svg') top center no-repeat;
+        background-size: 50vh;
+        max-width: 375px;
+        min-height: 100vh;
+    }
+    header .logo{
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px;
+        width: 150%;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        margin: 0px;
+        padding: 0px;
+    }
+    .info{
+        margin: 20px;
+        padding: 20px;
+        align-items: space-between;
+    }
+    .info h2{
+        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .info p{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .main-img{
+        max-width: 90%;
+        max-height: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .btn{
+        width: 210px;
+        height: 45px;
+        font-size: 14px;
+    }
+    a{
+        position: relative;
+        align-self: center;
+    }
+    .footer{ 
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fab{
+        font-size: 10px;
+    }
+}

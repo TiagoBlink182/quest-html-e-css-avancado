@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: var(--primary-color-1) url('../images/bg-desktop.svg') center center no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    height: 100vh;
+}
+
+header{
+    padding: 35px;
+}
+.logo{
+    width: 42%;
+    margin: 20px;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(autofit 2);
+    grid-template-rows: 1;
+    margin: 20px 40px;
+    grid-template-areas: "main-img info";
+}
+.main-img{
+    grid-area: main-img;
+    display: flex;
+    justify-content: stretch;
+    max-width: 100%;
+    width: 700px;
+    margin: 0px 10px;
+}
+.info{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    max-width: 100%;
+}
+.info h2{
+    font-size: 40px;
+    color: #ffff;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+.info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #ffff;
+    line-height: 25px;
+    padding: 15px 0px;
+}
+.info .btn{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 190px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 5px 10px 30px -15px black;
+}
+.conteiner .info a:hover{
+    transition: 0.3s;
+    background-color: var(--primary-color-2);
+    color: #ffff;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 60px; 
+}
+.footer .social{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer .social .fab{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: none;
+    margin: 15px;
+}
+.footer .social a i:hover{
+    transition: 0.3s;
+    color: var(--primary-color-2);
+} 
+
+.attribution{
+    text-align: center;
+    font-size: 8px;
+    bottom: 0;
+}
