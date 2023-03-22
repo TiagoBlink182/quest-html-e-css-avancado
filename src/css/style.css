@@ -6,15 +6,15 @@ body{
     background: var(--primary-color-1) url('../images/bg-desktop.svg') center center no-repeat;
     background-size: cover;
     max-width: 1440px;
-    height: 100vh;
+    min-height: 100vh;
+    margin: auto;
 }
 
 header{
-    padding: 35px;
+    padding: 30px;
 }
 .logo{
-    width: 42%;
-    margin: 20px;
+    margin: 10px;
 }
 
 .conteiner{
@@ -27,7 +27,7 @@ header{
 .main-img{
     grid-area: main-img;
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     max-width: 100%;
     width: 700px;
     margin: 0px 10px;
@@ -79,6 +79,8 @@ footer{
 .footer .social{
     display: flex;
     justify-content: flex-end;
+    gap: 30px;
+    padding: 25px;
 }
 .footer .social .fab{
     font-size: 25px;
@@ -86,17 +88,18 @@ footer{
     justify-content: center;
     align-items: center;
     color: #ffff;
-    width: 50px;
-    height: 50px;
     border: 1px solid;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     background-color: none;
-    margin: 15px;
+    padding: 25px;
+    gap: 50px;
 }
 .footer .social a i:hover{
     transition: 0.3s;
     color: var(--primary-color-2);
-} 
+}
 
 .attribution{
     text-align: center;
